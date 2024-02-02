@@ -1,5 +1,8 @@
 "use strict";
 let vall;
+const data = {
+    valid: true, salary: 100, place: "NaI"
+};
 function checkIfValid(data) {
     if (data.valid) {
         vall = true;
@@ -9,4 +12,4 @@ function checkIfValid(data) {
     }
     return vall;
 }
-console.log("check if its valid", checkIfValid({ valid: true }));
+console.log("check if its valid", checkIfValid(data));

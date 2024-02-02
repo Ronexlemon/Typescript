@@ -4,6 +4,9 @@ type isValid={
 }
 
 let vall ;
+const data ={
+    valid:true,salary:100,place: "NaI"
+}
 
 function checkIfValid(data:isValid){
     if(data.valid){
@@ -19,4 +22,4 @@ function checkIfValid(data:isValid){
     
 }
 
-console.log("check if its valid",checkIfValid({valid:true}))
+console.log("check if its valid",checkIfValid(data))
