@@ -26,10 +26,18 @@ function splitString(name:stringType){
 
 }
 
-function concatTwoStrings({name1,name2}:twoString){
-    const concatStrings = name1.concat(name2)
+function concatTwoStrings(data:twoString){
+    const concatStrings =  data.name1.concat(data.name2)
     return concatStrings;
 
+}
+function replacePersonName(newPerson:stringType){
+    return personName.variable.replace("Doe",newPerson.variable);
+
+}
+
+function checkIfStringIncludes(data:twoString){
+    return data.name1.includes(data.name2)
 }
 
 getName({variable:"Lemonr"})
@@ -39,3 +47,6 @@ console.log("newName",newName)
 console.log(`split String at  " "`,splitString({variable:"Hello There"}))
 
 console.log(`concat two strings`, concatTwoStrings({ name1: "yes", name2: "baanah" }));
+console.log("replace: ",replacePersonName({variable:"Yes"}))
+
+console.log("data includes inside another one",checkIfStringIncludes({name1:"I saw , i go, i found",name2:"go"}))
