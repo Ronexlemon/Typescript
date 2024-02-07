@@ -18,6 +18,15 @@ function checkDataType(data_type:union){
     }
 }
 
+
+function welcomePeople(x:string[] | string){
+    if( Array.isArray(x)){
+        console.log("Hello," + x.join("and"));
+    }else{
+        console.log("Welcome lone  traveler",x);
+    }
+}
 checkDataType("man")
 checkDataType(1234)
 checkDataType({name:"yollow",salary:2000,month:"jan"})
+welcomePeople(["ronex","lemon"])
