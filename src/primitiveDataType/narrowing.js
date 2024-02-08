@@ -13,6 +13,26 @@ function printAll(strs) {
         console.log(typeof null);
     }
 }
+function move(animal) {
+    if ("swim" in animal) {
+        return animal.swim();
+    }
+    else {
+        return animal.fly();
+    }
+}
+const fish = {
+    swim: () => {
+        console.log("fish swim");
+    }
+};
+const bird = {
+    fly: () => {
+        console.log("bird fly");
+    }
+};
+move(fish);
+move(bird);
 printAll("lemon");
 printAll(["yollow", "jdson"]);
 printAll(null);

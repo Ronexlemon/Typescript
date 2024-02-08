@@ -12,7 +12,35 @@ function printAll(strs:string|string[]|null):void{
         console.log(typeof null);
     }
 }
+//the in operator
 
+type Fish = {swim: ()=>void}
+type Bird = {fly:()=>void}
+type Human ={swim?:()=>void; fly?:()=>void}
+
+function move(animal: Fish |Bird){
+    if("swim" in animal){
+        return animal.swim()
+    }else{
+        return animal.fly();
+
+    }
+   
+}
+
+const fish :Fish ={
+    swim: ()=>{
+        console.log("fish swim")
+    }
+}
+const bird:Bird={
+    fly:()=>{
+        console.log("bird fly");
+    }
+}
+move(fish)
+move(bird)
 printAll("lemon");
 printAll(["yollow","jdson"])
 printAll(null)
+
