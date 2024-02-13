@@ -19,9 +19,11 @@ type netPay={
 interface Iemployee{
     empCode:string;
     empName: string;
-    getSalary:(arg0: number)=> number;
+    getSalary:(arg0: number)=> number|Error;
     getManagerName(arg0:number): string;
 }
+let salaryGroup: Array<number> = [100000,400000,500000,600000,2000000]
+let manageName: string[] = ["john","james","kim","hules","george"]
 function printPersonDetails(p:Person){
     console.log(`Hello ${p.name} ,you have turned ${p.age} years`);
 }
@@ -45,9 +47,23 @@ class Employee implements Iemployee{
         this.empName="Lemon"
     }
     getSalary = (arg0: number) =>{
-        return arg0;
+        if(salaryGroup.length >= arg0){
+            return salaryGroup[arg0];
+
+        }
+        return  new Error("out of range")
+
+        
+    }
+    getManagerName(arg0: number): string {
+        return manageName[arg0];
+        
     }
 }
+
+
+const Emp = new Employee();
+console.log(`Employee details name: ${Emp.empName} , code : ${Emp.empCode} , emp Manager ${Emp.getManagerName(0)} , emp Salary ${Emp.getSalary(0)}`)
 
 printPersonDetails({age:18,name:"John Doe"})
 getPersonDetailsAndCalculateNetPay({name:"hamas",age:20,salary:100000,tax:5000,rate:10})
