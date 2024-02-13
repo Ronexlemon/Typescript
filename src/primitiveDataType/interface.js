@@ -9,5 +9,14 @@ function getPersonDetailsAndCalculateNetPay(pd) {
 function calCulateNetPay(np) {
     return (np.salary - np.tax);
 }
+class Employee {
+    constructor() {
+        this.getSalary = (arg0) => {
+            return arg0;
+        };
+        this.empCode = "RTEDHY";
+        this.empName = "Lemon";
+    }
+}
 printPersonDetails({ age: 18, name: "John Doe" });
 getPersonDetailsAndCalculateNetPay({ name: "hamas", age: 20, salary: 100000, tax: 5000, rate: 10 });
