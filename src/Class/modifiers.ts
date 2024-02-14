@@ -18,4 +18,6 @@ class Doctor extends Person2{
 }
 
 const AB = new Doctor("doctor","demo")
+
+const ABC = new Doctor("doctor2","demo2")
 console.log(AB.name,"and", AB.occupation)
