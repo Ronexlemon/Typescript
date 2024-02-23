@@ -12,4 +12,19 @@ class Doctor extends Person2 {
     }
 }
 const AB = new Doctor("doctor", "demo");
+const ABC = new Doctor("doctor2", "demo2");
 console.log(AB.name, "and", AB.occupation);
+class Team {
+    constructor() {
+        this.Personname = "john";
+    }
+    getName() {
+        return this.Personname;
+    }
+    getAnyType(item) {
+        return item;
+    }
+}
+const team = new Team();
+console.log(team.Personname);
+console.log(team.getAnyType("lemon"));

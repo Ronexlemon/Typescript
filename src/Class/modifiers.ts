@@ -21,3 +21,27 @@ const AB = new Doctor("doctor","demo")
 
 const ABC = new Doctor("doctor2","demo2")
 console.log(AB.name,"and", AB.occupation)
+
+
+class Team<T>{
+
+    Personname:string
+
+    constructor(){
+        this.Personname = "john"
+    }
+    getName():string{
+        return this.Personname
+    }
+
+    getAnyType(item:T):T{
+        return item;
+
+    }
+}
+
+const team = new Team<string>()
+
+
+console.log(team.Personname)
+console.log(team.getAnyType("lemon"))
