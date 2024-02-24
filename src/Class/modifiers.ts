@@ -26,9 +26,11 @@ console.log(AB.name,"and", AB.occupation)
 class Team<T>{
 
     Personname:string
+    num: number
 
     constructor(){
         this.Personname = "john"
+        this.num =100
     }
     getName():string{
         return this.Personname
@@ -38,10 +40,15 @@ class Team<T>{
         return item;
 
     }
+    mul(n: number):number{
+        return  n *  this.num;
+    }
 }
 
 const team = new Team<string>()
 
 
+
 console.log(team.Personname)
 console.log(team.getAnyType("lemon"))
+console.log(team.mul(100))
