@@ -1,6 +1,13 @@
 "use strict";
+var empl = {};
+empl.name = "ronex";
+empl.salary = 1000;
+var empl2 = [];
+empl2.push({ name: "john doe", salary: 1000000 });
 let a = 0xa;
 let myCode = a;
 console.log(typeof (myCode));
 console.log(typeof (a));
 console.log(a);
+console.log(empl);
+console.log(empl2);
