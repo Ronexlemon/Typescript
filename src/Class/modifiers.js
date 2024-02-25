@@ -33,3 +33,6 @@ const team = new Team();
 console.log(team.Personname);
 console.log(team.getAnyType("lemon"));
 console.log(team.mul(100));
+console.log(team.Personname);
+console.log(team.getAnyType("johnn"));
+console.log(team.mul(1000));
