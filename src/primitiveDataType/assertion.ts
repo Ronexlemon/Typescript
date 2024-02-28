@@ -9,6 +9,19 @@ type EmployeeOne={
 
 }
 
+interface Vehicle{
+    name : string,
+    model: string,
+    milage: number
+}
+
+var car = <Vehicle>{}
+car.milage=1000;
+car.model = "BMW"
+car.name= "x6"
+
+console.log(car)
+
 var empl = <EmployeeTwo>{}
 empl.name ="ronex"
 empl.salary= 1000

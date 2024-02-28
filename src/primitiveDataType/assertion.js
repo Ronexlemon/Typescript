@@ -1,4 +1,9 @@
 "use strict";
+var car = {};
+car.milage = 1000;
+car.model = "BMW";
+car.name = "x6";
+console.log(car);
 var empl = {};
 empl.name = "ronex";
 empl.salary = 1000;
