@@ -29,6 +29,8 @@ var empl2: Array<EmployeeOne> =[]
 
 empl2.push({name:"john doe",salary:1000000});
 empl2.push({name:"Ramsey",salary:5000000});
+empl2.push({name:"kelly blanks",salary:1000000});
+empl2.push({name:"Ramsey jones",salary:5000000});
 
 
 
