@@ -33,6 +33,9 @@ empl2.push({name:"kelly blanks",salary:1000000});
 empl2.push({name:"Ramsey jones",salary:5000000});
 empl2.push({name:"kelly blanks",salary:1000000});
 empl2.push({name:"Ramsey jones",salary:5000000});
+empl2.push({name:"kell blans",salary:1000000});
+empl2.push({name:"Rams ones",salary:5000000});
+
 
 
 
