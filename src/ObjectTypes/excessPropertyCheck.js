@@ -7,5 +7,5 @@
 function createSquare(config) {
     return { color: config.color || "Green", area: config.width ? config.width * config.width : 0 };
 }
-var mySquare = createSquare({ color: "Green", width: 20 });
+var mySquare = createSquare({ colour: "Yellow", width: 20 });
 console.log(mySquare.area, mySquare.color);
