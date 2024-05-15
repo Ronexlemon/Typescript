@@ -20,3 +20,19 @@ interface AddressWithUnit extends BasicAddress{
 }
 
 
+//Intersection types
+
+interface Colorful{
+    color:string
+}
+
+interface Circle{
+    radius:number
+}
+
+type ColorfulCircle = Colorful & Circle; // intersection
+
+function draw(circle:ColorfulCircle){
+    console.log(`Drawing a ${circle.color} circle with radius ${circle.radius}`);
+}
+draw({color:"red",radius:10})
